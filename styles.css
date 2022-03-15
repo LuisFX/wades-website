@@ -1,44 +1,119 @@
+/* MASTER CSS */
+
 body {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
+  font-family: 'Roboto';
+}
+ 
+.nameandmedium {
+  color: #f1f1f1;
+  font-family: 'papyrus';
 }
 
-button {
-    border-color: red;
-    font-family: sans-serif;
-    font-size: 28px;
+/* menu- 
+1: Need to add a drop down btn
+2: Make the page hoverable button font white when clicking on it
+3: find out how to make the box around the letters bigger to fit the buttons
+4: put a Wade Goodman Art Logo instead of a Exxtra Ranch one */ 
+
+.header {
+  background-color: aqua;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 5px;
+  width: 100%;
+} 
+
+ul > li {
+  padding: 8px 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
 }
 
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
 
+
+ul > li:hover {
+  background-color: #555555;
+}
+
+ul > li > a {
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+} 
+
+ul > li:hover > a {
+  background-color: transparent;
+  color: white;
+} 
+
+ul {
+  list-style-type: none;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  display: flex;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+/*Into page*/
+
+.container { 
+  height: 600px;
+  position: relative;
+
+}
+.hmpgcontainerone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.intro_button {
+  background-color: white;
+  color: black;
+  font-family: 'papyrus';
+  font-size: 50px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* HOME PAGE */
+
+.bigimg{
+  width: 100%;
+/* height: 750px;
+width: 1425px; */
+}
+
+.hmpgimg {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 33%;
+}
+
+/* CHARACTERS TAB */
+
+.characters-topic {
+    border: 2px solid red;  
+    font-family: 'papyrus';  
+}
 
 .characters-p {
     border: 2px solid red;
@@ -46,18 +121,55 @@ button {
     color: black;
 }
 
-.characters-topic {
-    border: 2px solid red;    
-}
-
-.murals-topic {
-    border: 2px solid red;    
-}
+/* PAINTINGS TAB */
 
 .paintings-topic {
-    border: 2px solid red;    
+  border: 2px solid red; 
+  font-family: 'papyrus';   
 }
 
-.shop-topic {
-    border: 2px solid red;    
+.paintings-p {
+border: 2px solid red;
+background-color: rgb(221, 243, 255);
+color: black;
 }
+
+/* MURALS TAB */
+
+.murals-topic {
+    border: 2px solid red;
+    font-family: 'papyrus';
+}
+
+.murals-p {
+  border: 2px solid red;
+  background-color: rgb(221, 243, 255);
+  color: black;
+}
+
+/* CUSTOM APPAREL TAB*/
+
+.customapparel-topic {
+  border: 2px solid red;  
+  font-family: 'papyrus';  
+}
+
+.customapparel-p {
+border: 2px solid red;
+background-color: rgb(221, 243, 255);
+color: black;
+}
+
+/* SHOP TAB */
+
+.shop-topic {
+    border: 2px solid red;  
+    font-family: 'papyrus';  
+}
+
+.shop-p {
+  border: 2px solid red;
+  background-color: rgb(221, 243, 255);
+  color: black;
+}
+
