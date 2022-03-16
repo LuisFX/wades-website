@@ -40,7 +40,7 @@ span:hover{
 
 .rainbowtext {
   color: red; /* fallback color */
-  background: linear-gradient(#E933D2, #0288D1 , #66BB6A);
+  background: linear-gradient(#E933D2, #0288D1, #D1B857, #66BB6A, #B420A1);
   /* magic workarounds for modern browsers */
   -webkit-text-fill-color: transparent;
   background-clip: unset;
@@ -51,7 +51,7 @@ span:hover{
 
 .rainbowtext-animated:hover {
 color: red; /* fallback color */
-background: linear-gradient(#E933D2, #0288D1 , #66BB6A);
+background: linear-gradient(#E933D2, #0288D1,#D1B857, #66BB6A, #B420A1);
 /* magic workarounds for modern browsers */
 -webkit-text-fill-color: transparent;
 background-clip: unset;
