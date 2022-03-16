@@ -1,14 +1,71 @@
 /* MASTER CSS */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Pacifico&display=swap');
 
 body {
   background-color: black;
   color: white;
-  font-family: 'Roboto';
+  font-family: 'Maeven', sans-serif;
 }
  
 .nameandmedium {
   color: #f1f1f1;
-  font-family: 'papyrus';
+  font-family: 'Pacifico', cursive;
+}
+
+span{
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+span:hover{
+  white-space: nowrap;
+  color: #c0c0c0;
+  
+}
+
+.intro_button {
+  color: black;
+  font-family: 'Pacifico';
+  font-size: 50px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  border: 5px solid white;
+  border-radius: 15px;
+}
+
+.rainbowtext {
+  color: red; /* fallback color */
+  background: linear-gradient(#E933D2, #0288D1 , #66BB6A);
+  /* magic workarounds for modern browsers */
+  -webkit-text-fill-color: transparent;
+  background-clip: unset;
+  -webkit-background-clip: text;
+  /* make all colors visible at once */
+  background-size: 100% 60%;
+}
+
+.rainbowtext-animated:hover {
+color: red; /* fallback color */
+background: linear-gradient(#E933D2, #0288D1 , #66BB6A);
+/* magic workarounds for modern browsers */
+-webkit-text-fill-color: transparent;
+background-clip: unset;
+-webkit-background-clip: text;
+/* animate the gradient */
+-webkit-animation: AnimateTextGradient 7s ease infinite;
+animation: AnimateTextGradient 7s ease infinite;
+background-size: 100% 60%;
+}
+
+@keyframes AnimateTextGradient {
+0% { background-position: 50% 0; }
+50% { background-position: 50% 100%; }
+100% { background-position: 50% 0; }
 }
 
 /* menu- 
@@ -80,18 +137,6 @@ ul {
   justify-content: center;
 }
 
-.intro_button {
-  background-color: white;
-  color: black;
-  font-family: 'papyrus';
-  font-size: 50px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
 
 /* HOME PAGE */
 
@@ -112,7 +157,7 @@ width: 1425px; */
 
 .characters-topic {
     border: 2px solid red;  
-    font-family: 'papyrus';  
+    font-family: 'Pacifico';  
 }
 
 .characters-p {
@@ -125,7 +170,7 @@ width: 1425px; */
 
 .paintings-topic {
   border: 2px solid red; 
-  font-family: 'papyrus';   
+  font-family: 'Pacifico';   
 }
 
 .paintings-p {
@@ -138,7 +183,7 @@ color: black;
 
 .murals-topic {
     border: 2px solid red;
-    font-family: 'papyrus';
+    font-family: 'Pacifico';
 }
 
 .murals-p {
@@ -151,7 +196,7 @@ color: black;
 
 .customapparel-topic {
   border: 2px solid red;  
-  font-family: 'papyrus';  
+  font-family: 'Pacifico';  
 }
 
 .customapparel-p {
@@ -164,7 +209,7 @@ color: black;
 
 .shop-topic {
     border: 2px solid red;  
-    font-family: 'papyrus';  
+    font-family: 'Pacifico';  
 }
 
 .shop-p {
